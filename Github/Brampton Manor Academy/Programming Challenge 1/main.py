@@ -27,7 +27,17 @@ def converttime(mile):
 
 
 def run():
-    rods = float(input("Input rods"))
+    while True:
+        rods = (input("Input rods"))
+        try:
+            rods = float(rods)
+            if rods > 0:
+                break
+            else:
+                print(f"a number greater than 0 please")
+        except ValueError:
+            print(f"please input a number")
+
     print(rods)
 
     metres = convertmetres(rods)
