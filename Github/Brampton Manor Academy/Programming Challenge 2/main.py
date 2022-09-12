@@ -11,13 +11,13 @@ def findtnt(joules):
     return tnt
 
 def showlist(richtervalues):
-    print(f"Richter          Joules                             TNT ")
+    print(f"{'richter':20}{'joules':20}{'TNT':20}")
     for x in richtervalues:
         richter = x
         joules = findenergy(richter)
         tnt = findtnt(joules)
 
-        print(f"{richter}             {joules}            {tnt}")
+        print(f"{richter:20}{joules:20}{tnt:20}")
 
 def inputrichter():
     richter = int(input(f"please input a richter value: "))

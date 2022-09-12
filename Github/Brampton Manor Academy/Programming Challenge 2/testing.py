@@ -10,3 +10,6 @@ class MyFirstTests(unittest.TestCase):
     def test_tnt(self):
         self.assertEqual(findtnt(1995262.3149688789), 0.00047687913837688307)
 
+if __name__ == '__main__':
+    unittest.main()
+
