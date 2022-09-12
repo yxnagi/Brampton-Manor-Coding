@@ -11,12 +11,15 @@ class MyFirstTests(unittest.TestCase):
         self.assertEqual(convertfurlong(10), 0.25)
 
     def test_mile(self):
-        self.assertEqual(convertmile(50.292), 0.03125007767)
+        self.assertEqual(convertmile(50.292), 0.03125007767159208)
 
     def test_foot(self):
         self.assertEqual(convertfoot(50.292), 165.0)
 
     def test_time(self):
-        self.assertEqual(converttime(0.03125007767), 0.6048402129985564)
+        self.assertEqual(converttime(0.03125007767), 0.6048402129677419)
+
+if __name__ == '__main__':
+    unittest.main()
 
 
