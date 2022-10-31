@@ -34,7 +34,7 @@ def make_square(order, top_left):
 if __name__ == "__main__":
     order, top_left = find_order_and_topleft()
     main = make_square(order, top_left)
-    print(main)
     for row in main:
-        print(row)
+        row = [str(each) for each in row]
+        print(" ".join(row))
 
